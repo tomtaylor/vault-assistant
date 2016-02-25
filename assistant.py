@@ -65,7 +65,7 @@ def response_for_structure(intent, entities):
     if person["name"] == "me":
         person_string = "your"
     else:
-        person_string = person["name"] + "'s'"
+        person_string = person["name"] + "'s"
 
     return "{person} {records}".format(person=person_string, records=" and ".join(record_strings))
 
